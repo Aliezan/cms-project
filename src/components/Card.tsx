@@ -41,9 +41,11 @@ const CardComponent: FC<CardProps> = ({ src, alt, title, desc, name }) => (
         <CardDescription>{desc}</CardDescription>
       </div>
     </CardContent>
-    <CardFooter className='flex justify-between mt-5'>
-      <Button variant='outline'>Cancel</Button>
-      <Button>Deploy</Button>
+    <CardFooter className='grid justify-items-end mt-5'>
+      <div className='grid grid-cols-2 gap-2'>
+        <Button variant='outline'>Cancel</Button>
+        <Button>Deploy</Button>
+      </div>
     </CardFooter>
   </Card>
 );
